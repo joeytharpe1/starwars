@@ -8,9 +8,6 @@ import Films from './FilmsComponent';
 import { createMuiTheme, ThemeProvider } from '@material-ui/core';
 
 const theme = createMuiTheme({
-    root:{
-        backgroundColor: '#d3d4bc',
-    },
     palette: {
         primary: {
             main: '#b71c1c',
@@ -18,6 +15,7 @@ const theme = createMuiTheme({
         secondary: {
             main: '#fff',
         },
+        type: 'dark'
     },
     typography: {
         fontFamily: 'Garamond',
