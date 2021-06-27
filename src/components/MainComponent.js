@@ -5,15 +5,21 @@ import Header from './HeaderComponent';
 import Home from './HomeComponent';
 import Explore from './ExploreComponent';
 import Films from './FilmsComponent';
+import Footer from './FooterComponent';
+
+
 import { createMuiTheme, ThemeProvider } from '@material-ui/core';
 
 const theme = createMuiTheme({
     palette: {
         primary: {
-            main: '#b71c1c',
+            main: '#000000',
         },
         secondary: {
             main: '#fff',
+        },
+        warning: {
+            main: '#ffdd00',
         },
         type: 'dark'
     },
@@ -35,6 +41,7 @@ function MainComponent() {
                     <Route exact path='/films' component={Films} />
                     <Redirect to='/home' />
                 </Switch>
+                <Footer />
             </ThemeProvider>
         </>
     )

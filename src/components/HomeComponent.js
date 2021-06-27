@@ -1,6 +1,7 @@
 import React from 'react';
 import '../home.css';
 
+
 import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 import Paper from '@material-ui/core/Paper';
@@ -16,6 +17,7 @@ import Fade from 'react-reveal/Fade';
 import Roll from 'react-reveal/Roll';
 import TextLoop from "react-text-loop";
 
+
 const useStyles = makeStyles((theme) => ({
     title: {
         marginTop: 20,
@@ -27,21 +29,25 @@ const useStyles = makeStyles((theme) => ({
         height: 310,
     },
     card: {
-        color: theme.palette.primary.main,
+        border: '1px solid #04b574',
+        color: '#7d0e77',
         '& p': 'white',
-        backgroundColor: '#050505',
+        backgroundColor: '#000000',
         alignItems: 'center',
         transition: "transform 0.15s ease-in-out",
         "&:hover": { transform: "scale3d(1.05, 1.05, 1)" },
+        cursor: 'pointer',
 
     },
     card2: {
+        border: '1px solid #7d0e77',
         color: '#04b574',
         '& p': 'white',
-        backgroundColor: '#050505',
+        backgroundColor: '#000000',
         alignItems: 'center',
         transition: "transform 0.5s ease-in-out",
         "&:hover": { transform: "scale3d(1.05, 1.05, 1)" },
+        cursor: 'pointer',
     }
 }));
 
@@ -49,17 +55,17 @@ function Home() {
     const classes = useStyles();
 
     return (
+        <>
         <Container>
             <Grid container spacing={3}>
                 <Grid item xs={12}>
                     <Fade top>
-                        <Typography className={classes.title} variant='h1' align='center'>
+                        <Typography className={classes.title} variant='h1' align='center' color='secondary'>
                             In a Galaxy far far <TextLoop>
-                                <span style={{ color: 'red' }}>away..</span>
+                                <span style={{ color: 'yellow' }}>away..</span>
                                 <span style={{ color: 'green' }}>away..</span>
-                                <span style={{ color: 'blue' }}>away..</span>
+                                <span style={{ color: 'purple' }}>away..</span>
                             </TextLoop>
-
                         </Typography>
                     </Fade>
                 </Grid>
@@ -259,7 +265,8 @@ function Home() {
                 </Grid>
             </Grid>
         </Container>
-    )
+        </>
+    );
 }
 
 export default Home;

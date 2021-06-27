@@ -20,8 +20,8 @@ const useStyles = makeStyles((theme) => ({
     },
     button: {
         '&:hover':{
-            backgroundColor: '#fff',
-            color: '#b71c1c'
+            backgroundColor: theme.palette.primary.main,
+            color: theme.palette.warning.main,
         }
     }
 }));
@@ -35,7 +35,6 @@ function Navbar() {
                 <Toolbar>
                     <Typography variant="h6" className={classes.title} align="center">
                         <Button component={Link} to='/' className={classes.button}
-                            variant='outlined'
                             color="inherit"
                             startIcon={<HomeOutlinedIcon />}
                         >
@@ -44,7 +43,6 @@ function Navbar() {
                     </Typography>
                     <Typography variant="h6" className={classes.title} align="center">
                         <Button component={Link} to='/films' className={classes.button}
-                            variant='outlined'
                             color="inherit"
                             startIcon={<MovieCreationOutlinedIcon />}
                         >
@@ -53,7 +51,6 @@ function Navbar() {
                     </Typography>
                     <Typography variant="h6" className={classes.title} align="center">
                         <Button component={Link} to='/explore' className={classes.button}
-                            variant='outlined'
                             color="inherit"
                             startIcon={<SearchIcon />}
                         >
