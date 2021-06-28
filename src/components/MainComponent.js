@@ -8,7 +8,7 @@ import Films from './FilmsComponent';
 import Footer from './FooterComponent';
 
 
-import { createMuiTheme, ThemeProvider } from '@material-ui/core';
+import { createMuiTheme, ThemeProvider, CssBaseline } from '@material-ui/core';
 
 const theme = createMuiTheme({
     palette: {
@@ -33,6 +33,7 @@ const theme = createMuiTheme({
 function MainComponent() {
     return (
         <>
+        <CssBaseline>
             <ThemeProvider theme={theme}>
                 <Header />
                 <Switch>
@@ -43,6 +44,7 @@ function MainComponent() {
                 </Switch>
                 <Footer />
             </ThemeProvider>
+            </CssBaseline>
         </>
     )
 }

@@ -29,7 +29,7 @@ const useStyles = makeStyles((theme) => ({
         height: 310,
     },
     card: {
-        border: '1px solid #04b574',
+        border: '1px solid #cac531',
         color: '#7d0e77',
         '& p': 'white',
         backgroundColor: '#000000',
@@ -40,7 +40,7 @@ const useStyles = makeStyles((theme) => ({
 
     },
     card2: {
-        border: '1px solid #7d0e77',
+        border: '1px solid #cac531',
         color: '#04b574',
         '& p': 'white',
         backgroundColor: '#000000',
