@@ -76,7 +76,7 @@ function Explore() {
                                     aria-controls="panel1a-content"
                                     id="panel1a-header"
                                 >
-                                    <Typography variant="h5" gutterBottom className={classes.hoverEffect}>Take Control of the Fastest Ship in the Galaxy</Typography>
+                                    <Typography variant="h5" color="warning" gutterBottom className={classes.hoverEffect}>Take Control of the Fastest Ship in the Galaxy</Typography>
                                 </AccordionSummary>
                                 <AccordionDetails>
                                     <Typography variant='p' gutterBottom>

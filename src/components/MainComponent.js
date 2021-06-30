@@ -27,6 +27,9 @@ const theme = createMuiTheme({
     },
     typography: {
         fontFamily: 'Garamond',
+        h5:{
+            color: '#ffdd00',
+        }
     },
     spacing: 8,
 
@@ -41,6 +44,7 @@ function MainComponent() {
                     position: 'absolute',
                     width: '100%',
                     height: '100%',
+
                 }}
             />
             <CssBaseline>

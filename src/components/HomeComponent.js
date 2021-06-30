@@ -30,7 +30,7 @@ const useStyles = makeStyles((theme) => ({
     },
     card: {
         border: '1px solid #cac531',
-        color: '#ff0000',
+        color: theme.palette.warning.main,
         '& p': 'white',
         backgroundColor: '#000000',
         alignItems: 'center',
@@ -41,7 +41,7 @@ const useStyles = makeStyles((theme) => ({
     },
     card2: {
         border: '1px solid #cac531',
-        color: '#04b574',
+        color:  theme.palette.warning.main,
         '& p': 'white',
         backgroundColor: '#000000',
         alignItems: 'center',
