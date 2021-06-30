@@ -9,7 +9,7 @@ import SearchIcon from '@material-ui/icons/Search';
 
 const useStyles = makeStyles((theme) => ({
     root: {
-        marginTop: 30,
+        marginTop: 10,
     },
     title: {
         flexGrow: 1,
@@ -26,7 +26,7 @@ function Footer() {
     const classes = useStyles();
 
     return (
-            <AppBar position="static">
+            <AppBar position="static" className={classes.root}>
                 <Container maxWidth='md'>
                     <Toolbar>
                         <Typography variant="h6" className={classes.title} align="center">
@@ -38,19 +38,19 @@ function Footer() {
                             </Button>
                         </Typography>
                         <Typography variant="h6" className={classes.title} align="center">
-                            <Button component={Link} to='/films' className={classes.button}
-                                color="inherit"
-                                startIcon={<MovieCreationOutlinedIcon />}
-                            >
-                                Films
-                            </Button>
-                        </Typography>
-                        <Typography variant="h6" className={classes.title} align="center">
                             <Button component={Link} to='/explore' className={classes.button}
                                 color="inherit"
                                 startIcon={<SearchIcon />}
                             >
                                 Explore
+                            </Button>
+                        </Typography>
+                        <Typography variant="h6" className={classes.title} align="center">
+                            <Button component={Link} to='/movies' className={classes.button}
+                                color="inherit"
+                                startIcon={<MovieCreationOutlinedIcon />}
+                            >
+                                Movies
                             </Button>
                         </Typography>
                     </Toolbar>

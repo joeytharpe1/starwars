@@ -19,7 +19,7 @@ const useStyles = makeStyles((theme) => ({
         flexGrow: 1,
     },
     button: {
-        '&:hover':{
+        '&:hover': {
             backgroundColor: theme.palette.primary.main,
             color: theme.palette.warning.main,
         }
@@ -41,20 +41,22 @@ function Navbar() {
                             home
                         </Button>
                     </Typography>
-                    <Typography variant="h6" className={classes.title} align="center">
-                        <Button component={Link} to='/films' className={classes.button}
-                            color="inherit"
-                            startIcon={<MovieCreationOutlinedIcon />}
-                        >
-                            Films
-                        </Button>
-                    </Typography>
+
                     <Typography variant="h6" className={classes.title} align="center">
                         <Button component={Link} to='/explore' className={classes.button}
                             color="inherit"
                             startIcon={<SearchIcon />}
                         >
                             Explore
+                        </Button>
+                    </Typography>
+
+                    <Typography variant="h6" className={classes.title} align="center">
+                        <Button component={Link} to='/movies' className={classes.button}
+                            color="inherit"
+                            startIcon={<MovieCreationOutlinedIcon />}
+                        >
+                            Movies
                         </Button>
                     </Typography>
                 </Toolbar>

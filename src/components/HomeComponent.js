@@ -30,7 +30,7 @@ const useStyles = makeStyles((theme) => ({
     },
     card: {
         border: '1px solid #cac531',
-        color: '#7d0e77',
+        color: '#ff0000',
         '& p': 'white',
         backgroundColor: '#000000',
         alignItems: 'center',
@@ -84,7 +84,7 @@ function Home() {
             </Grid>
 
             <Grid container spacing={3} >
-                <Grid item xs={6}>
+                <Grid item md={6}>
                     <Roll left>
                         <Card className={classes.card} elevation={15}>
                             <CardHeader
@@ -105,7 +105,7 @@ function Home() {
                     </Roll>
                 </Grid>
 
-                <Grid item xs={6}>
+                <Grid item md={6}>
                     <Fade right>
                         <Card elevation={15} className={classes.card} >
                             <CardHeader
@@ -127,7 +127,7 @@ function Home() {
             </Grid>
 
             <Grid container spacing={3} >
-                <Grid item xs={6}>
+                <Grid item md={6}>
                     <Fade bottom>
                         <Card elevation={15} className={classes.card}>
                             <CardHeader
@@ -147,7 +147,7 @@ function Home() {
                     </Fade>
                 </Grid>
 
-                <Grid item xs={6}>
+                <Grid item md={6}>
                     <Fade left>
                         <Card elevation={15} className={classes.card}>
                             <CardHeader
@@ -185,7 +185,7 @@ function Home() {
             </Grid>
 
             <Grid container spacing={3}>
-                <Grid item xs={6}>
+                <Grid item md={6}>
                     <Fade right>
                         <Card elevation={15} className={classes.card2}>
                             <CardHeader
@@ -204,7 +204,7 @@ function Home() {
                         </Card>
                     </Fade>
                 </Grid>
-                <Grid item xs={6}>
+                <Grid item md={6}>
                     <Fade left>
                         <Card elevation={15} className={classes.card2}>
                             <CardHeader
@@ -225,7 +225,7 @@ function Home() {
                 </Grid>
             </Grid>
             <Grid container spacing={3}>
-                <Grid item xs={6}>
+                <Grid item md={6}>
                     <Fade right>
                         <Card elevation={15} className={classes.card2}>
                             <CardHeader
@@ -244,7 +244,7 @@ function Home() {
                         </Card>
                     </Fade>
                 </Grid>
-                <Grid item xs={6}>
+                <Grid item md={6}>
                     <Fade left>
                         <Card elevation={15} className={classes.card2}>
                             <CardHeader
