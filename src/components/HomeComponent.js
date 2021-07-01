@@ -64,7 +64,7 @@ function Home() {
                             In a Galaxy far far <TextLoop>
                                 <span style={{ color: 'yellow' }}>away..</span>
                                 <span style={{ color: 'green' }}>away..</span>
-                                <span style={{ color: 'purple' }}>away..</span>
+                                <span style={{ color: 'red' }}>away..</span>
                             </TextLoop>
                         </Typography>
                     </Fade>

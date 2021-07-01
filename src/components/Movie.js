@@ -66,3 +66,4 @@ export default function Movie({ data }) {
         </Fade>
     )
 }
+

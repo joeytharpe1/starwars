@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import Movie from './Movie';
 
 
+
 import Grid from '@material-ui/core/Grid';
 import Pagination from '@material-ui/lab/Pagination';
 import Typography from '@material-ui/core/Typography';
@@ -11,7 +12,7 @@ import { makeStyles } from '@material-ui/styles'
 
 import { getMovies } from '../api/query';
 import Fade from 'react-reveal/Fade';
-
+import TextLoop from "react-text-loop";
 
 const PaginationContainer = styled(Grid)`
   margin-top: 50px;
@@ -29,9 +30,10 @@ const useStyles = makeStyles((theme) => ({
     movieTitles: {
         transition: "transform 0.5s ease-in-out",
         "&:hover": { transform: "scale3d(1.05, 1.05, 1)" },
-       
+
     }
 }))
+
 
 
 function Movies() {
@@ -41,11 +43,14 @@ function Movies() {
     const [page, setPage] = useState(1)
     const [totalPages, setTotalPages] = useState(0)
     const [totalResults, setTotalResults] = useState(0)
-
+    
 
     const handlePageChange = (e, value) => {
         setPage(value);
     };
+
+
+    
 
     useEffect(() => {
         (async () => {
@@ -59,19 +64,24 @@ function Movies() {
 
 
 
+
     return (
         <Container className={classes.root}>
             <Grid container align="center" justify="center">
                 <Grid item xs={12}>
                     <Fade top>
                         <Typography variant='h2' color='secondary' gutterBottom className={classes.movieTitles}>
-                            Explore other movies and dive in!
+                            Explore the <TextLoop>
+                                    <span style={{ color: 'yellow' }}>FORCE !</span>
+                                    <span style={{ color: 'white' }}>FORCE !</span>
+                                    <span style={{ color: 'red' }}>FORCE !</span>
+                                </TextLoop>
                         </Typography>
                     </Fade>
                 </Grid>
             </Grid>
             <Grid container spacing={2} justify="center">
-                {movies.filter(movie => movie.original_title.includes('')).map((movie, index) => (
+                {movies.map((movie, index) => (
                     <Grid key={index} item xs={12} sm={4} md={3}>
                         <Movie data={movie} />
                     </Grid>
