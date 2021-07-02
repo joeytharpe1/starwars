@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import moment from 'moment'
 
 import { makeStyles } from '@material-ui/core/styles';
@@ -7,7 +7,7 @@ import CardActionArea from '@material-ui/core/CardActionArea';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Typography from '@material-ui/core/Typography';
-import Button from '@material-ui/core/Button';
+
 
 import Fade from 'react-reveal/Fade';
 
@@ -33,7 +33,6 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 export default function Movie({ data }) {
-    const [button, setButton] = useState();
     const classes = useStyles();
     const { backdrop_path, original_title, overview, release_date, id } = data;
 

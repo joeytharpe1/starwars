@@ -2,7 +2,7 @@ import React from 'react';
 
 import { makeStyles } from '@material-ui/core/styles';
 
-import { Card, CardHeader, CardMedia, CardContent, Container, Paper, Grid, Button } from '@material-ui/core';
+import { Card, CardMedia, CardContent, Container, Grid, Button } from '@material-ui/core';
 import PinDropIcon from '@material-ui/icons/PinDrop';
 
 import Fade from 'react-reveal/Fade';
