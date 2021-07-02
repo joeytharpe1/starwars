@@ -1,70 +1,21 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## A Star Wars website
 
-## Available Scripts
+In this project i created a mobile first, reactive star wars website using Material UI for the first time.
 
-In the project directory, you can run:
+### Inspiration
 
-### `yarn start`
+I've always been a fan of star wars from the first time i saw the movie "Star Wars A New Hope" I fell in love. It's kind of like programming in a way, see in Star Wars one of the main charatcers Luke Skywalker lost faith in having the ability to become one of the best jedi masters. Although he couldnt see himself as a jedi legend, it was with time practice and dedication he would rise to be the great master he was. I feel a deep connection with Luke because in programming you have to have hard work and dedication to become a great programmer. With that being said "May the Force be with you".
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Steps taken to make this website
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+1. Research Material UI and come up with a layout.
+2. What components can i use to show my skills as a developer
+3. how can i make my UI attractive to the user and wow them, what colors and effects can i add to keep the user attention wanting to stay on my page .
+4. Implement a home page to where a give a brief description on what exactly Star Wars is, if a user is unsure or never heard about Star Wars. 
 
-### `yarn test`
+### Challenegs faced
+ 1. Some of the Challenegs i faced for starters was how to add pictures to my site using Material UI. With Material UI the only way you can get a picture to render is by making sure u set a height, other wise the picture will not show. Took some time but by reading the docs i was able to overcome this challenge. 
+ 2. Using the useEffect hook when doing my API calls as well as the async and await methods. This was probably one of the hardest parts of trying to make one of my pages to render only movies containing the words "Star Wars"..But again with practice anything is possible. One way i overcome this challenge was going back to the URL in my API folder i created containing the file Query.js and changing the query part of the Url to "query=star-wars". This actually render only the movies i needed which contained the title "Star Wars" to show on the page. 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+    ### THANK YOU FOR VIEWING MY PROJECT !
