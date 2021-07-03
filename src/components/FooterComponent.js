@@ -2,7 +2,11 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 import { makeStyles } from '@material-ui/core/styles';
 
-import { AppBar, Toolbar, Typography, Button, Container } from '@material-ui/core';
+import Container from '@material-ui/core/Container';
+import AppBar from '@material-ui/core/AppBar';
+import Toolbar from '@material-ui/core/Toolbar';
+import Typography from '@material-ui/core/Typography';
+import Button from '@material-ui/core/Button';
 import HomeOutlinedIcon from '@material-ui/icons/HomeOutlined';
 import MovieCreationOutlinedIcon from '@material-ui/icons/MovieCreationOutlined';
 import SearchIcon from '@material-ui/icons/Search';
@@ -33,6 +37,7 @@ function Footer() {
                             <Button component={Link} to='/' className={classes.button}
                                 color="inherit"
                                 startIcon={<HomeOutlinedIcon />}
+                                onClick={() => window.scrollTo({top: 0, behavior: 'smooth'})}
                             >
                                 home
                             </Button>
@@ -41,6 +46,7 @@ function Footer() {
                             <Button component={Link} to='/explore' className={classes.button}
                                 color="inherit"
                                 startIcon={<SearchIcon />}
+                                onClick={() => window.scrollTo({top: 0, behavior: 'smooth'})}
                             >
                                 Explore
                             </Button>
@@ -49,6 +55,7 @@ function Footer() {
                             <Button component={Link} to='/movies' className={classes.button}
                                 color="inherit"
                                 startIcon={<MovieCreationOutlinedIcon />}
+                                onClick={() => window.scrollTo({top: 0, behavior: 'smooth'})}
                             >
                                 Movies
                             </Button>

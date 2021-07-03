@@ -1,7 +1,7 @@
 
 ## A Star Wars website
 
-In this project i created a mobile first, reactive star wars website using Material UI for the first time.
+In this project i created a mobile first, reactive star wars website using Material UI.
 
 ### Inspiration
 

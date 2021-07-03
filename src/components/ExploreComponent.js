@@ -2,8 +2,14 @@ import React from 'react';
 
 import { makeStyles } from '@material-ui/core/styles';
 
-import { Card, CardMedia, CardContent, Container, Grid, Button } from '@material-ui/core';
+
 import PinDropIcon from '@material-ui/icons/PinDrop';
+import Grid from '@material-ui/core/Grid';
+import Container from '@material-ui/core/Container';
+import Card from '@material-ui/core/Card';
+import CardMedia from '@material-ui/core/CardMedia';
+import CardContent from '@material-ui/core/CardContent';
+import Button from '@material-ui/core/Button';
 
 import Fade from 'react-reveal/Fade';
 import TextLoop from "react-text-loop";
@@ -102,7 +108,7 @@ function Explore() {
                         <Fade left>
                             <Button className={classes.button}
                                 variant='outlined'
-                                color='inherit'
+                                color='secondary'
                                 startIcon={<PinDropIcon />}
                                 onClick={() => window.open(`https://disneyworld.disney.go.com/attractions/hollywood-studios/millennium-falcon-smugglers-run/`)}
                             >
@@ -149,7 +155,7 @@ function Explore() {
                         <Fade right>
                             <Button className={classes.button}
                                 variant='outlined'
-                                color='inherit'
+                                color='secondary'
                                 startIcon={<PinDropIcon />}
                                 onClick={() => window.open(`https://disneyland.disney.go.com/attractions/map/#/id=star-tours/`)}
                             >
@@ -189,7 +195,7 @@ function Explore() {
                         <Fade left>
                             <Button className={classes.button}
                                 variant='outlined'
-                                color='inherit'
+                                color='secondary'
                                 startIcon={<PinDropIcon />}
                                 onClick={() => window.open(`https://www.starwars.com/news/star-wars-galactic-baking-cookbook`)}
                             >

@@ -4,6 +4,7 @@ import Movie from './Movie';
 
 
 
+
 import Grid from '@material-ui/core/Grid';
 import Pagination from '@material-ui/lab/Pagination';
 import Typography from '@material-ui/core/Typography';
@@ -94,7 +95,10 @@ function Movies() {
                     </Grid>
 
                     <Grid item>
-                        <Pagination count={totalPages} shape="rounded" color="primary" onChange={handlePageChange} />
+                        <Pagination count={totalPages} shape="rounded" color="primary" 
+                        onChange={handlePageChange} 
+                        onClick={() => window.scrollTo({top: 0, behavior: 'smooth'})}
+                        />
                     </Grid>
                 </PaginationContainer>
             </Grid>
